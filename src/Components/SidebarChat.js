@@ -3,15 +3,17 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { v4 } from "uuid";
 import db from '../firebase';
-import "./SidebarChat.css"
+import "./SidebarChat.css";
+import { useStateValue } from './userContext';
 const SidebarChat = ( {id, name, addNewChat}) => {
+    const [{lastMessage}, dispatch] = useStateValue();
     const [seed, setSeed] = useState("");
     useEffect(() => {
+        console.log(lastMessage);
         setSeed(v4);
     }, [])
     const createChat = () => {
         const roomName = prompt("Please Enter name for chat");
-
         if(roomName) {
             db.collection('room').add({
                 name: roomName
@@ -24,7 +26,7 @@ const SidebarChat = ( {id, name, addNewChat}) => {
                 <Avatar src = {`https://avatars.dicebear.com/api/male/${seed}.svg`}/>
                 <div className = "sidebarChat__info">
                     <h2>{name}</h2>
-                    <p>Last Message...</p>
+                    <p>{lastMessage}</p>
                 </div>
             </div>
         </Link>

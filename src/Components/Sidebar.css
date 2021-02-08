@@ -35,10 +35,15 @@
 }
 
 .sidebar__searchConatainer > input {
+    flex: 1;
+    padding: 10px;
     border: none;
     margin-left: 10px;
 }
 
+.sidebar__searchConatainer > input:focus {
+    outline: none;
+}
 .sidebar__searchConatainer > .MuiSvgIcon-root {
     color : gray;
     padding: 10px;

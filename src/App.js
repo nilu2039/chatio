@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./App.css"
 import Sidebar from './Components/Sidebar';
 import Chat from "./Components/Chat"
@@ -7,12 +7,9 @@ import Login from './Components/Login';
 import { useStateValue } from './Components/userContext';
 const App = () => {
   const [{ user }, dispatch] = useStateValue();
-  console.log(user);
   return (
       <div className = "App">
-        {!user ? (
-          <Login />
-        ) : (
+        {user ? (
           <div className = "App__body">
           <Router>
           <Sidebar />
@@ -26,6 +23,8 @@ const App = () => {
             </Switch>
           </Router>
         </div>
+        ) : (
+          <Login />
         )}
       </div>
   )

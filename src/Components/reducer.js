@@ -1,9 +1,11 @@
 export const initialState = {
     user: null,
+    lastMessage: "",
 };
 
 export const actionTypes = {
-    SET_USER: "SET_USER"
+    SET_USER: "SET_USER",
+    SET_MESSAGE: "SET_MESSAGE"
 };
 
 const reducer = (state, action) => {
@@ -12,7 +14,12 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 user: action.user
-            }    
+            }   
+        case actionTypes.SET_MESSAGE:
+            return {
+                ...state,
+                lastMessage: action.message
+            }
         default:
             return state;
     }

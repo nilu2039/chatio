@@ -84,10 +84,10 @@
     border-radius: 30px;
     border: none;
     padding: 10px;
-    width: 10vw;
-    overflow-wrap: break-word;
 }
-
+.chat__footer > form > input:focus {
+    outline: none;
+}
 .chat__footer > form > button {
     display: none;
 }
