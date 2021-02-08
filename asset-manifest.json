@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chatio/static/css/main.4f8a8515.chunk.css",
+    "main.js": "/chatio/static/js/main.95225150.chunk.js",
+    "main.js.map": "/chatio/static/js/main.95225150.chunk.js.map",
+    "runtime-main.js": "/chatio/static/js/runtime-main.6110e3bf.js",
+    "runtime-main.js.map": "/chatio/static/js/runtime-main.6110e3bf.js.map",
+    "static/js/2.585e2e04.chunk.js": "/chatio/static/js/2.585e2e04.chunk.js",
+    "static/js/2.585e2e04.chunk.js.map": "/chatio/static/js/2.585e2e04.chunk.js.map",
+    "static/js/3.0472ac15.chunk.js": "/chatio/static/js/3.0472ac15.chunk.js",
+    "static/js/3.0472ac15.chunk.js.map": "/chatio/static/js/3.0472ac15.chunk.js.map",
+    "index.html": "/chatio/index.html",
+    "static/css/main.4f8a8515.chunk.css.map": "/chatio/static/css/main.4f8a8515.chunk.css.map",
+    "static/js/2.585e2e04.chunk.js.LICENSE.txt": "/chatio/static/js/2.585e2e04.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6110e3bf.js",
+    "static/js/2.585e2e04.chunk.js",
+    "static/css/main.4f8a8515.chunk.css",
+    "static/js/main.95225150.chunk.js"
+  ]
+}
